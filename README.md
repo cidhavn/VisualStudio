@@ -10,8 +10,7 @@
 
 ## 建立 Entity Framework Core
 
-因為 Entity Framework Core 可在 VS Code 上使用,
-所以僅能用套件管理主控台下指令
+僅提供在 NuGet 套件管理主控台下指令安裝, 無工具使用, 推測可能是為了配合 VS Code
 
 ### 1. 安裝套件
     PM> Install-Package Microsoft.EntityFrameworkCore.Tools
