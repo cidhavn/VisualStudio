@@ -13,11 +13,12 @@
 僅提供在 NuGet 套件管理主控台下指令安裝, 無工具使用, 推測可能是為了配合 VS Code
 
 ### 1. 安裝套件
-    PM> Install-Package Microsoft.EntityFrameworkCore.Tools
     PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer.Design
+    PM> Install-Package Microsoft.EntityFrameworkCore.Tools
 
 ### 2. 建立程式碼
     PM> Scaffold-DbContext "Server=.\SQLEXPRESS;Database=DbName;Persist Security Info=True;User ID=sa;Password=123"   Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
-* Scaffold-DbContext 為剛剛安裝Tools套件的指令，連線字串依自己情況決定
-* -OutputDir 指定要輸出到專案根目錄下哪個資料夾，本文為Models資料夾
-* -Force 為工具產出的Class檔案強制覆寫現有的檔案(DB欄位Schema異動後，就給這個)
+* Scaffold-DbContext 這是剛剛安裝 Tools 套件的指令，連線字串依自己情況決定
+* -OutputDir 指定要輸出到專案根目錄下哪個資料夾
+* -Force 工具產出的檔案強制覆寫現有的檔案，用於 Schema 異動後
+* -Tables 指定資料表 e.g. Users, Roles
