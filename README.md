@@ -19,7 +19,7 @@
 
 ### 2. 建立程式碼
     PM> Scaffold-DbContext "Server=.\SQLEXPRESS;Database=DbName;Persist Security Info=True;User ID=sa;Password=123"   Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
-* Scaffold-DbContext 這是剛剛安裝 Tools 套件的指令，連線字串依自己情況決定
+* Scaffold-DbContext Tools 套件的指令，連線字串依自己情況決定
 * -OutputDir 指定要輸出到專案根目錄下哪個資料夾
 * -Force 工具產出的檔案強制覆寫現有的檔案，用於 Schema 異動後
 * -Tables 指定資料表 e.g. Users, Roles
