@@ -8,7 +8,7 @@
 4. Vue.js Pack - Vue.js Intellisense
 
 
-## 建立 Entity Framework Core
+## 建立 Entity Framework Core (.NET Core 2.1)
 
 僅提供在 NuGet 套件管理主控台下指令安裝, 無工具使用, 推測可能是為了配合 VS Code
 
